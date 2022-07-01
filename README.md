@@ -1,2 +1,3 @@
 # Thiomargarita_magnifica
 
+ssds
