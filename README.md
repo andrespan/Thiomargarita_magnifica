@@ -1,10 +1,7 @@
 # Searching BGCs of Thiomargarita magnifica
 
 Introduction
-
-_Candidatus Thiomargarita Magnifica_ has recently been described as the world's largest bacterium with an average length of one centimeter and being visible to the naked eye leads us to rethink everything we thought we knew about bacteria.
-Genetic analysis of _Ca. T. magnifica_ reveals high levels of elongation genes that together with the loss of key genes in cell division may explain its length.
-
+ 
  _FIXME_
  
 Obtaining genomic Data
@@ -57,12 +54,32 @@ SRR18724479                                100%[================================
 Then we depackage the fastq files with fastq-dump:
 
 ~~~
+cd Data
 fastq-dump --gzip --skip-technical --readids --dumpbase --split-files --clip SRR18724479
 ~~~
 {: .language-bash}
 
+~~~
+ls 
+SRR18724479_1.fastq  SRR18724479_2.fastq
+~~~
+{: .output}
+
+_1.fastq contains all forward reads and _2.fastq contains all reverse reads in a fastq file.
 
 Then we need to assemble the reads with SPAdes:
 
 spades.py [options] -o <output_dir>
+
+Then we use our assembly for search the BGCs on antiSMASH:
+
+https://antismash.secondarymetabolites.org/#!/start
+
+We use the default parameters on the online platform
+
+
+
+
+
+
 
