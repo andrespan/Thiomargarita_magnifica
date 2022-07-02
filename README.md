@@ -1,6 +1,10 @@
 # Searching BGCs of Thiomargarita magnifica
 
 Introduction
+
+Candidatus Thiomargarita Magnifica has recently been described as the world's largest bacterium with an average length of one centimeter and being visible to the naked eye leads us to rethink everything we thought we knew about bacteria.
+
+Genetic analysis of Ca. T. magnifica reveals high levels of elongation genes that together with the loss of key genes in cell division may explain its length.
  
  _FIXME_
  
